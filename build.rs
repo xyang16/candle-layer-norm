@@ -101,7 +101,7 @@ fn main() -> Result<()> {
                     .arg("--expt-extended-lambda")
                     .arg("--use_fast_math")
                     .arg("--compiler-options -fPIC")
-                    .arg("--verbose")
+                    .arg("--verbose");
                 if let Ok(ccbin_path) = &ccbin_env {
                     command
                         .arg("-allow-unsupported-compiler")
