@@ -100,7 +100,8 @@ fn main() -> Result<()> {
                     .arg("--expt-relaxed-constexpr")
                     .arg("--expt-extended-lambda")
                     .arg("--use_fast_math")
-                    .arg("--verbose");
+                    .arg("--verbose")
+                    .arg("-fPIC");
                 if let Ok(ccbin_path) = &ccbin_env {
                     command
                         .arg("-allow-unsupported-compiler")
